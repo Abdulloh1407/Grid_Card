@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            max-width: 1200px;
+            width: 100%;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+                " child1 child1 child2 child2 "
+                " child1 child1 child2 child2 "
+                " child3 child3 child4 child4 "
+                " child3 child3 child4 child4 "
+                " child5 child5 child6 child6 "
+                " child5 child5 child6 child6 ";
+            gap: 10px;
+        }
+
+        .child {
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child1 {
+            grid-area: child1;
+        }
+
+        .child4 {
+            grid-area: child4;
+        }
+
+        .child5 {
+            grid-area: child5;
+        }
+
+        @media(max-width: 700px) {
+            main {
+                width: 100%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    " child1 child1 child2 "
+                    " child1 child1 child2 "
+                    " child3 child4 child4 "
+                    " child3 child4 child4 "
+                    " child5 child5 child6 "
+                    " child5 child5 child6 ";
+            }
+
+            .child1 {
+                grid-area: child1;
+            }
+
+            .none{
+                display: none;
+            }
+
+            .child8 {
+                grid-area: child8;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child2">3</div>
+        <div class="child child2">4</div>
+        <div class="child child2">5</div>
+        <div class="child child3">6</div>
+        <div class="child child3">7</div>
+        <div class="child child3 none">8</div>
+        <div class="child child3 none">9</div>
+        <div class="child child4">10</div>
+        <div class="child child5">11</div>
+        <div class="child child6 none">12</div>
+        <div class="child child6 none">13</div>
+        <div class="child child6 none">14</div>
+        <div class="child child6 none">15</div>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    body{
+        background-color: hsl(217, 100%, 97%);
+    }
+    #root{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        }   
+    .con{
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    header{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    header h1{
+        color: rgb(47, 162, 234);
+        font-size: 20px;
+    }
+    header h6{
+        color: rgb(6, 145, 17);
+        font-size: 15px;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 20px;
+        /* flex:1; */
+    }
+    .plan1{
+        width: 100%;
+        padding: 20px;
+        flex: 1;
+
+    }
+    .plan2 {
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(32, 172, 241);
+        flex: 1;
+    }
+
+
+</style>
+<body>
+    <div id="root">
+       <div class="con">
+        <header>
+        <h1>Join our community</h1>
+        <h6>30-day, hassle-free money back guarantee</h6>
+        <p>Gain access to our full library of tutorials along with expert code reviews.
+           Perfect for any developers who are serious about honing their skills.
+        </p>
+        </header>
+        <main>
+        
+            <div class="plan1">
+                <h2>Monthly Subscription</h2>
+                <p><span>&dollar;29</span> per month</p>
+                <p>Full access for less than &dollar;1 a day</p>
+                <button>Sign Up</button>
+            </div>
+            <div class="plan2">
+                <h2>Why Us</h2>
+                <p>Tutorials by industry experts   
+                    Peer &amp; expert code review
+                    Coding exercises
+                    Access to our GitHub repos
+                    Community forum
+                    Flashcard decks
+                    New videos every week
+                </p>
+            </div>
+        </main>
+       </div>
+    </div>
+</body>
+</html> -->
