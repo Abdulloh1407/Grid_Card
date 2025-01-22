@@ -1,5 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height: 90vh;
+            display: grid;
+            border: solid;
+            grid-template-columns: repeat(5 ,1fr);
+            grid-template-rows: repeat(5 ,1fr);
+            place-content:space-around;
+            place-items: space-around;
+            padding: 20px;
+            gap:20px;
+        }
+        .child1{
+            border:solid;
+            border-radius: 10px;
+            background-color: red;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+        .child2{
+            border:solid;
+            border-radius: 10px;
+            background-color: gray;
+            grid-column: 3/ span 5;
+            grid-row: 1 / span 2;
+        }    
+        .child3{
+            border:solid;
+            border-radius: 10px;
+            background-color: yellow;
+            grid-column: 2 / span 2;
+            grid-row: 2 / span 2;
+            z-index: 2;
+        }
+        .child4{
+            border:solid;
+            border-radius: 10px;
+            background-color:green;
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+        }
+        .child5{
+            border:solid;
+            border-radius: 10px;
+            background-color: blue;
+            grid-column: 3 / span 1;
+            grid-row: 4 / span 1;
+        }
+        .child6{
+            border:solid;
+            border-radius: 10px;
+            background-color: forestgreen;
+            grid-column: 4 / span 2;
+            grid-row: 3 / span 6;
+        }
+        
+        .child7{
+            border:solid;
+            border-radius: 10px;
+            background-color: red;
+            grid-column: 1 / span 3;
+            grid-row: 5 / span 4 ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+        <div class="child7"></div>
+    </header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -116,7 +222,7 @@
 
 
 
-<!-- <!DOCTYPE html>
+<!- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
