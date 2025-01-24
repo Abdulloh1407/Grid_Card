@@ -27,7 +27,7 @@
 
 
 
-# from person import Person/
+from person import Person
 # from person import Rectangle
 
 # lst=[True,[False,[True,[False,[True]]]]]
